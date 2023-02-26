@@ -10,6 +10,7 @@ function ProductList() {
   const products = useSelector((state) => state.productSlice.productList);
   useEffect(() => {
     getProducts();
+    // eslint-disable-next-line
   }, []);
   
   async function getProducts() {

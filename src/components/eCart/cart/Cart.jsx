@@ -1,15 +1,14 @@
 import React from "react";
-import { useState } from "react";
 import { useSelector } from "react-redux";
 import SingleProduct from "../singleProduct/SingleProduct";
 import "./style.css";
 
 function Cart() {
-  const [disc, setDisc] = useState(20)
   const product = useSelector((state) => state.cartSlice.cart);
   let totalMRP =0;
   product.forEach(item => totalMRP += item.price*item.quantity)
   let charg = 2;
+  let disc = 20;
   return (
     <>
       <div className="cart">
