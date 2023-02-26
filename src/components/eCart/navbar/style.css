@@ -1,0 +1,45 @@
+nav{
+    background-color: #084e0f;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 3;
+}
+
+.siteName h3{
+    padding: 20px;
+    font-size: 2rem;
+}
+
+.bag{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    font-size: 2rem;
+    position: relative;
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+.count{
+    position: absolute;
+    bottom: 15px;
+    left: 20px;
+    color: white;
+    background-color: #ff8000;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.count h5{
+    font-size: 15px;
+}

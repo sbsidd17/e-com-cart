@@ -1,17 +1,19 @@
 
 import './App.css';
-import CreateNotes from './components/CreateNotes';
-import NotesList from './components/NotesList';
+import Navbar from './components/eCart/navbar/Navbar';
+import ProductList from './components/eCart/productList/ProductList';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Cart from './components/eCart/cart/Cart';
 
 function App() {
   return (
-    <div className="App">
-      <nav>
-            <h1>Notes Manager</h1>
-      </nav>
-      <CreateNotes />
-      <NotesList />
-    </div>
+    <BrowserRouter>
+    <Navbar />
+      <Routes>
+        <Route path="/" element={<ProductList />}></Route>
+        <Route path="/cart" element={<Cart />}></Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 

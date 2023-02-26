@@ -1,0 +1,42 @@
+.cart{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 120px;
+}
+
+.placeOrder{
+    width: 40%;
+    margin: 40px 30%;
+}
+.placeOrder p{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.placeOrder h3{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.coupon{
+    color: #ff0000;
+    cursor: pointer;
+}
+
+.placeOrder button{
+    background-color: #02be02;
+    color: #fff;
+    font-size: 1.2rem;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 5px;
+}
+
+.placeOrder button:hover{
+    background-color: #008000;
+}
