@@ -14,10 +14,10 @@ function ProductList() {
     // eslint-disable-next-line
   }, []);
 
-  // const status = useSelector((state) => state.productSlice.status);
-  // if(status === 'loading'){
-  //   return <Loader />
-  // }
+  const status = useSelector((state) => state.productSlice.status);
+  if(status === 'loading'){
+    return <Loader />
+  }
 
   return (
     <div className="productList">
