@@ -15,6 +15,7 @@ function ProductList() {
   }, []);
 
   const status = useSelector((state) => state.productSlice.status);
+  console.log(status);
   if(status === 'loading'){
     return <Loader />
   }
